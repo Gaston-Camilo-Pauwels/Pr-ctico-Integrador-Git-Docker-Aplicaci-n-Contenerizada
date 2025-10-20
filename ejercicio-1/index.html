@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1 class="app-title">Rick and Morty Explorador</h1>
+            <div class="nav-buttons">
+                <button id="btnAll" data-status="">Todos</button>
+                <button id="btnAlive" data-status="alive">Vivos</button>
+                <button id="btnDead" data-status="dead">Muertos</button>
+                <button id="btnFavorites">Favoritos</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <p id="loadingMessage" class="message loading-message hidden">Cargando personajes...</p>
+            <p id="errorMessage" class="message error-message hidden">Error al cargar los personajes </p>
+            <p id="noCharactersMessage" class="message no-characters-message hidden">No hay personajes para mostrar aquí.</p>
+            <div id="charactersGrid" class="card-grid">
+                </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
